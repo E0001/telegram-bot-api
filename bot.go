@@ -169,7 +169,7 @@ func (bot *BotAPI) UploadFiles(endpoint string, params Params, files []RequestFi
 	m := multipart.NewWriter(w)
 
 	// This code modified from the very helpful @HirbodBehnam
-	// https://github.com/go-telegram-bot-api/telegram-bot-api/issues/354#issuecomment-663856473
+	// https://github.com/E0001/telegram-bot-api/issues/354#issuecomment-663856473
 	go func() {
 		defer w.Close()
 		defer m.Close()

@@ -23,7 +23,7 @@ pull request!
   while Golang uses UTF8. It's possible to convert between the two, see
   [issue #231][issue-231] for more details.
 
-[issue-231]: https://github.com/go-telegram-bot-api/telegram-bot-api/issues/231
+[issue-231]: https://github.com/E0001/telegram-bot-api/issues/231
 
 ## GetUpdatesChan
 
