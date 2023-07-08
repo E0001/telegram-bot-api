@@ -73,6 +73,7 @@ func TestSendWithMessage(t *testing.T) {
 
 	msg := NewMessage(ChatID, "A test message from the test library in telegram-bot-api")
 	msg.ParseMode = ModeMarkdown
+
 	_, err := bot.Send(msg)
 
 	if err != nil {
@@ -608,7 +609,7 @@ func TestSendWithMediaGroupPhotoVideo(t *testing.T) {
 	bot, _ := getBot(t)
 
 	cfg := NewMediaGroup(ChatID, []interface{}{
-		NewInputMediaPhoto(FileURL("https://github.com/E0001/telegram-bot-api/raw/0a3a1c8716c4cd8d26a262af9f12dcbab7f3f28c/tests/image.jpg")),
+		NewInputMediaPhoto(FileURL("https://github.com/go-telegram-bot-api/telegram-bot-api/raw/0a3a1c8716c4cd8d26a262af9f12dcbab7f3f28c/tests/image.jpg")),
 		NewInputMediaPhoto(FilePath("tests/image.jpg")),
 		NewInputMediaVideo(FilePath("tests/video.mp4")),
 	})
